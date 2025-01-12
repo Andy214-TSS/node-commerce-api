@@ -12,6 +12,11 @@ Please feel free to discuss, provide suggestion or corrections; The idea is to c
 
 > Recommended to install NVM (Node Version Manager) to manage your node version.
 
+#### ToDo
+
+1. create ``.env`` file based on provided ``.env.example`` on the root folder
+
+
 ### The First Setup
 
 1. ``npm init -y`` in project folder, which will generate a package.json.
@@ -22,4 +27,6 @@ Please feel free to discuss, provide suggestion or corrections; The idea is to c
 ## Running the API Server
 
 1. ``npm start`` 
-   - This command will include a watch to watch for changes on index.js and restart the server 
+   - This command will include:
+     - a ``watch`` flag to watch for changes on index.js and restart the server 
+     - an ``env-file`` flag to read configs from env file
