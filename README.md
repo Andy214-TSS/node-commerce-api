@@ -19,3 +19,7 @@ Please feel free to discuss, provide suggestion or corrections; The idea is to c
 3. ``git init`` in project folder
 4. Commit and push to github
 
+## Running the API Server
+
+1. ``npm start`` 
+   - This command will include a watch to watch for changes on index.js and restart the server 
