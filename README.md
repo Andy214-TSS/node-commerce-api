@@ -30,3 +30,7 @@ Please feel free to discuss, provide suggestion or corrections; The idea is to c
    - This command will include:
      - a ``watch`` flag to watch for changes on index.js and restart the server 
      - an ``env-file`` flag to read configs from env file
+
+## Running TEST
+
+1. ``npm test``
