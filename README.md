@@ -9,8 +9,14 @@ Please feel free to discuss, provide suggestion or corrections; The idea is to c
 ### Requirements
 
 1. Node (ideally v20.6 and above)
+    > Recommended to install NVM (Node Version Manager) to manage your node version
+2. sqlite3 (comes preinstalled with MacOS)
+   
+### Setup Database
 
-> Recommended to install NVM (Node Version Manager) to manage your node version.
+1. Run below command to initialize the database
+    ``sqlite3 database.db < src/database/schema.sql``
+
 
 #### ToDo
 
