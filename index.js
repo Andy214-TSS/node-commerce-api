@@ -21,4 +21,15 @@ app.get("/health", (req, res) => {
     res.status(200).send("OK");
 });
 
+app.get("/api/products", (req, res) => {
+    db.all('SELECT * FROM products', (err, rows) => {
+        if (err) {
+            console.error(err.message);
+            res.status(500).send('Fail to get Products');
+        } else {
+            res.status(200).send(rows);
+        }
+    });
+});
+
 module.exports = app

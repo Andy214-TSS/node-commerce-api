@@ -1,5 +1,12 @@
 # Change Log
 
+- 20250119 -- 1.0.3
+  - New Products API
+    - GET all products
+  - Added Integration Test for Product API
+  - Updated Integration Test to separate API Health Test vs Products API Test
+  - Updated readme for Products API
+
 - 20250118 -- 1.0.2
   *No feature changes in this version*
   - Added connection to the database

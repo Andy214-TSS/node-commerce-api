@@ -37,6 +37,11 @@ Please feel free to discuss, provide suggestion or corrections; The idea is to c
      - a ``watch`` flag to watch for changes on index.js and restart the server 
      - an ``env-file`` flag to read configs from env file
 
+### Products API
+
+1. Get all products:
+   ``curl -X GET http://localhost:3000/api/products``
+
 ## Running TEST
 
 1. ``pnpm test``
