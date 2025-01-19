@@ -1,5 +1,10 @@
 # Change Log
 
+- 20250119 -- 1.0.4
+  - update schema.sql to make database create only if exists
+  - use environment variable for database name
+  - update .env.example to include ``DATABASE_NAME`` config
+
 - 20250119 -- 1.0.3
   - New Products API
     - GET all products
