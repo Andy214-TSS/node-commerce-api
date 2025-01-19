@@ -1,6 +1,13 @@
 # Change Log
 
+- 20250119 -- 1.0.5
+  *No feature changes in this version*
+  - setup test datababase ``database-test.db`` for integration test
+  - setup jest.config to configure test database name in env
+  - update integration test with setupIntegrationTest step to set-up test database
+
 - 20250119 -- 1.0.4
+  *No feature changes in this version*
   - update schema.sql to make database create only if exists
   - use environment variable for database name
   - update .env.example to include ``DATABASE_NAME`` config
