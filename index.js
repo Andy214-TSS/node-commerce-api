@@ -1,16 +1,8 @@
 const express = require('express')
-const sqlite3 = require('sqlite3').verbose()
+const { PrismaClient } = require('@prisma/client')
 
 const app = express();
-const database_name = process?.env?.DATABASE_NAME || 'database.db';
-
-const db = new sqlite3.Database(`./${database_name}`, sqlite3.OPEN_READWRITE, (err) => {
-    if (err) {
-        console.error(err.message);
-    } else {
-        console.log(('Connected to the database.'))
-    }
-});
+const db = new PrismaClient();
 
 app.use(express.json());
 
@@ -23,14 +15,12 @@ app.get("/health", (req, res) => {
 });
 
 app.get("/api/products", (req, res) => {
-    db?.all('SELECT * FROM products', (err, rows) => {
-        if (err) {
-            console.error(err.message);
-            res.status(500).send('Fail to get Products');
-        } else {
-            res.status(200).send(rows);
-        }
-    });
+    db.product.findMany().then((products) => {
+        res.status(200).send(products);
+    }).catch((error) => {
+        console.error(error.message);
+        res.status(500).send('Fail to get Products');
+    })
 });
 
 module.exports = app;

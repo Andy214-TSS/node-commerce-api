@@ -1,5 +1,12 @@
 # Change Log
 
+- 20250209 -- 1.1.0
+  *No feature changes in this version*
+  - migrate to prisma:
+    - use prisma migration as database migration tool
+    - setup and configure database for test environment
+    - use prisma client for database as ORM
+
 - 20250119 -- 1.0.5
   *No feature changes in this version*
   - setup test datababase ``database-test.db`` for integration test

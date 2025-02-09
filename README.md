@@ -11,12 +11,14 @@ Please feel free to discuss, provide suggestion or corrections; The idea is to c
 1. Node (ideally v20.6 and above)
     > Recommended to install NVM (Node Version Manager) to manage your node version
 2. sqlite3 (comes preinstalled with MacOS)
+3. Prisma
    
 ### Setup Database
 
-1. Run below command to initialize the database
-    ``sqlite3 database.db < src/database/schema.sql``
-
+1. Run the below command to initialize the database
+    ``pnpm db-migrate``
+2. Run the below command to initialize the test database
+    ``pnpm db-migrate-test``
 
 #### ToDo
 
